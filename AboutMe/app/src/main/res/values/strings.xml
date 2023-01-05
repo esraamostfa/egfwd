@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Esraa Mostfa</string>
+    <string name="profile_image_content_description">Profile Image</string>
+    <string name="star_image_content_description">Star Image</string>
+    <string name="bio">I\'m a Mobile Apps Developer.
+        \n Passionate for computer science and programming.
+        \n I like every thing about tech and computer and i can\'t bare to have a problem and not found a solution for it, I like my feeling after solving a problem related to computer.
+        \n \n I also like creating things, for example away from computer and programming, I like origami, knitting and any handmade,
+        when I create thing I feel it\'s my baby that grows slowly and I feel enthusiastic to see it full grown.
+        \n \n Mobile apps development gathered those two passions for me, problem solving and creating things so I found myself in it.</string>
+    <string name="nickname_hint">What\'s Your Nickname?</string>
+    <string name="done">DONE</string>
+</resources>
