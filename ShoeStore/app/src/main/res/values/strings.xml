@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Shoe Store</string>
-   <string name="large_text">
+   <string name="large_text" translatable="false">
         "Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
@@ -94,9 +94,13 @@
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
-    <string name="welcome" translatable="false">"Welcome!"</string>
+    <string name="welcome">"Welcome!"</string>
     <string name="invalid_email" translatable="false">Not a valid email</string>
     <string name="invalid_password" translatable="false">Password must be >5 characters</string>
     <string name="login_failed" translatable="false">"Login failed"</string>
     <string name="not_have_account">don\'t have account?</string>
+     <string name="welcome2">Add shoes as match as you want..</string>
+     <string name="next">Next</string>
+     <string name="instructions1">*You can add new shoe to shoes list</string>
+     <string name="instructions2">*For each shoe you can add its details:\n 1-Its name. \n 2-Its size 3-Its company \n 4-Its description \n its image</string>
 </resources>

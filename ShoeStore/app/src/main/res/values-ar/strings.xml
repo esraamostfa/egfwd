@@ -6,4 +6,9 @@
     <string name="register">انشاء حساب</string>
     <string name="login">تسجيل دخول</string>
     <string name="not_have_account">لا تمتلك حساب؟</string>
+    <string name="welcome">مرحبًا!</string>
+    <string name="welcome2">أضف الأحذية بقدر ما تشاء..</string>
+    <string name="next">التالي</string>
+    <string name="instructions1">*يمكنك إضافة حذاء جديد لقائمة الأحذية.</string>
+    <string name="instructions2">*كل حذاء يمكنك إدخال تفاصيل عنه: \n 1- اسمه\n 2- حجمه\n 3-الشركة المصنعة.\n 4- وصفه\n 5- صورة له</string>
 </resources>

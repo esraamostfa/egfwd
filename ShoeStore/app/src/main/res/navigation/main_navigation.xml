@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.esraa.egfwd.shoestore.screens.welcome.WelcomeFragment"
+        android:name="com.esraa.egfwd.shoestore.screens.onboarding.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -28,14 +28,13 @@
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
-        android:name="com.esraa.egfwd.shoestore.screens.instructions.InstructionsFragment"
+        android:name="com.esraa.egfwd.shoestore.screens.onboarding.InstructionsFragment"
         android:label="fragment_instructions"
         tools:layout="@layout/fragment_instructions" >
         <action
             android:id="@+id/action_instructionsFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment"
-            app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/shoeListFragment"

@@ -2,7 +2,7 @@
 <resources>
     <style name="HeaderText" parent="Widget.AppCompat.TextView">
          <item name="android:textColor">@color/purple_500</item>
-         <item name="android:textSize">@dimen/header_font_size</item>
+         <item name="android:textSize">@dimen/header2_font_size</item>
         </style>
 
 </resources>
