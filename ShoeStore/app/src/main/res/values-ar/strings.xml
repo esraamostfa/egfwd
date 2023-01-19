@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="email">الإيميل</string>
+    <string name="password">الباسوورد</string>
+    <string name="register">انشاء حساب</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="not_have_account">لا تمتلك حساب؟</string>
+</resources>
