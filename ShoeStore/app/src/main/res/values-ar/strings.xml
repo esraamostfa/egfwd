@@ -11,4 +11,10 @@
     <string name="next">التالي</string>
     <string name="instructions1">*يمكنك إضافة حذاء جديد لقائمة الأحذية.</string>
     <string name="instructions2">*كل حذاء يمكنك إدخال تفاصيل عنه: \n 1- اسمه\n 2- حجمه\n 3-الشركة المصنعة.\n 4- وصفه\n 5- صورة له</string>
+    <string name="name">الاسم</string>
+    <string name="size">الحجم</string>
+    <string name="description">الوصف</string>
+    <string name="company">الشركة</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">الغاء</string>
 </resources>

@@ -51,7 +51,11 @@
     </fragment>
     <fragment
         android:id="@+id/shoeDetailFragment"
-        android:name="com.esraa.egfwd.shoestore.screens.shoe_detail.ShoeDetailFragment"
+        android:name="com.esraa.egfwd.shoestore.screens.shoe_list.ShoeDetailFragment"
         android:label="fragment_shoe_detail"
-        tools:layout="@layout/fragment_shoe_detail" />
+        tools:layout="@layout/fragment_shoe_detail" >
+        <action
+            android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment" />
+    </fragment>
 </navigation>
