@@ -1,17 +1,20 @@
 package com.esraa.egfwd.shoestore.screens.shoe_list
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.core.view.MenuHost
+import androidx.core.view.MenuProvider
 import androidx.core.view.setMargins
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Lifecycle
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.esraa.egfwd.shoestore.R
 import com.esraa.egfwd.shoestore.databinding.FragmentShoeListBinding
 
@@ -38,6 +41,8 @@ private lateinit var binding: FragmentShoeListBinding
         }
 
         addShoeListViews(requireActivity())
+
+        setupMenu()
 
         return binding.root
     }
@@ -72,8 +77,23 @@ private lateinit var binding: FragmentShoeListBinding
                 shoeContainer.addView(shoeDescriptionTextView)
                 binding.shoeListContainer.addView(shoeView)
 
+
             }
         }
 
+    }
+
+    private fun setupMenu() {
+        (requireActivity() as MenuHost).addMenuProvider(object : MenuProvider {
+
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                menuInflater.inflate(R.menu.menu, menu)
+            }
+
+            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                // Validate and handle the selected menu item
+                return   NavigationUI.onNavDestinationSelected(menuItem, requireView().findNavController())
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 }

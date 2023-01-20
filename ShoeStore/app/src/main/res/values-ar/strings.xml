@@ -5,6 +5,7 @@
     <string name="password">الباسوورد</string>
     <string name="register">انشاء حساب</string>
     <string name="login">تسجيل دخول</string>
+    <string name="logout">تسجيل خروج</string>
     <string name="not_have_account">لا تمتلك حساب؟</string>
     <string name="welcome">مرحبًا!</string>
     <string name="welcome2">أضف الأحذية بقدر ما تشاء..</string>

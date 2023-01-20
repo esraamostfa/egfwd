@@ -5,6 +5,7 @@
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="welcome">"Welcome!"</string>
     <string name="invalid_email" translatable="false">Not a valid email</string>
     <string name="invalid_password" translatable="false">Password must be >5 characters</string>
