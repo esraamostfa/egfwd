@@ -5,4 +5,9 @@
          <item name="android:textSize">@dimen/header2_font_size</item>
         </style>
 
+    <style name="Header3Text" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">@dimen/header3_font_size</item>
+    </style>
+
 </resources>

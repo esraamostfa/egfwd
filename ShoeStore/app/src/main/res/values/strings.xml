@@ -13,8 +13,8 @@
     <string name="not_have_account">don\'t have account?</string>
      <string name="welcome2">Add shoes as match as you want..</string>
      <string name="next">Next</string>
-     <string name="instructions1">*You can add new shoe to shoes list</string>
-     <string name="instructions2">*For each shoe you can add its details:\n 1-Its name. \n 2-Its size 3-Its company \n 4-Its description \n its image</string>
+     <string name="instructions1">*You can add new shoe to shoes list\u2022</string>
+     <string name="instructions2">*For each shoe you can add its details:\u2022\n 1-Its name. \n 2-Its size 3-Its company \n 4-Its description \n its image</string>
     <string name="add_new_shoe" translatable="false">add new shoe</string>
     <string name="name">Name</string>
     <string name="size">size</string>

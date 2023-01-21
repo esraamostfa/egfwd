@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.onboarding.InstructionsFragment">
 
     <LinearLayout
@@ -10,10 +11,19 @@
         android:gravity="center_vertical"
         android:padding="@dimen/basic_margin">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="297dp"
+
+            android:layout_marginBottom="@dimen/margin_large"
+            android:src="@drawable/shoes"
+            app:srcCompat="@drawable/shoes" />
+
         <TextView
             android:id="@+id/instructions1_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/header3_font_size"
             android:text="@string/instructions1"
             />
 
@@ -21,6 +31,7 @@
             android:id="@+id/instructions2_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/header3_font_size"
             android:layout_marginBottom="@dimen/margin_large"
             android:text="@string/instructions2"
             />

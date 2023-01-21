@@ -59,6 +59,8 @@ private lateinit var binding: FragmentShoeListBinding
                 )
                 params.setMargins(16)
                 shoeView.layoutParams = params
+                shoeView.cardElevation = 5.0F
+                shoeView.radius = 20.0f
                 val shoeContainer = LinearLayout(context)
                 shoeContainer.orientation = LinearLayout.VERTICAL
                 shoeContainer.setPadding(16, 16, 16, 16)
