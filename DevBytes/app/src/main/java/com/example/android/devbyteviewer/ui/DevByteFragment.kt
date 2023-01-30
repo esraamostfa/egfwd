@@ -31,6 +31,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android.devbyteviewer.DevByteApplication
 import com.example.android.devbyteviewer.R
 import com.example.android.devbyteviewer.databinding.DevbyteItemBinding
 import com.example.android.devbyteviewer.databinding.FragmentDevByteBinding
@@ -53,7 +54,8 @@ class DevByteFragment : Fragment() {
         }
         //The ViewModelProviders (plural) is deprecated.  
         //ViewModelProviders.of(this, DevByteViewModel.Factory(activity.application)).get(DevByteViewModel::class.java)
-        ViewModelProvider(this, DevByteViewModel.Factory(activity.application)).get(DevByteViewModel::class.java)
+        val application = activity.application as DevByteApplication
+        ViewModelProvider(this, DevByteViewModel.Factory(application.repository))[DevByteViewModel::class.java]
                 
     }
 

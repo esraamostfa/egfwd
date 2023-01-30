@@ -16,3 +16,31 @@
  */
 
 package com.example.android.devbyteviewer.work
+
+import android.content.Context
+import androidx.work.CoroutineWorker
+import androidx.work.WorkerParameters
+import com.bumptech.glide.load.HttpException
+import com.example.android.devbyteviewer.database.VideosDatabase
+import com.example.android.devbyteviewer.repository.VideosRepository
+
+class RefreshDataWorker( appContext: Context, params: WorkerParameters):
+    CoroutineWorker(appContext, params) {
+
+    companion object {
+        const val WORK_NAME = "RefreshDataWorker"
+    }
+
+    override suspend fun doWork(): Result {
+        return try {
+            val database = VideosDatabase.getDatabase(applicationContext)
+            val repository = VideosRepository(database)
+
+            repository.refreshVideos()
+            Result.success()
+        } catch (e: HttpException) {
+            Result.retry()
+
+        }
+}
+    }
