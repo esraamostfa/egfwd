@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -56,9 +57,10 @@ dependencies {
 
 
     //for fcm
-    //implementation 'com.google.firebase:firebase-core:21.1.1'
-    //implementation 'com.google.firebase:firebase-iid:21.1.0'
-    //implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    implementation platform('com.google.firebase:firebase-bom:31.2.0')
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-iid:21.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
 
     //Work
     implementation "androidx.work:work-runtime-ktx:2.7.1"

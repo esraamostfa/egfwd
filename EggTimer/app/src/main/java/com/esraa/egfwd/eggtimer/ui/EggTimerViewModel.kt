@@ -22,9 +22,12 @@ import android.content.Intent
 import android.os.CountDownTimer
 import android.os.SystemClock
 import androidx.core.app.AlarmManagerCompat
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.*
 import com.esraa.egfwd.eggtimer.R
 import com.esraa.egfwd.eggtimer.receiver.AlarmReceiver
+import com.esraa.egfwd.eggtimer.util.cancelNotifications
+import com.esraa.egfwd.eggtimer.util.sendNotification
 import kotlinx.coroutines.*
 
 class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {
@@ -88,6 +91,14 @@ class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {
      * @param isChecked, alarm status to be set.
      */
     fun setAlarm(isChecked: Boolean) {
+        //cancel all notifications
+        val notificationManager =
+            ContextCompat.getSystemService(
+                app,
+                NotificationManager::class.java
+            ) as NotificationManager
+        //notificationManager.cancelNotifications()
+
         when (isChecked) {
             true -> timeSelection.value?.let { startTimer(it) }
             false -> cancelNotification()
@@ -116,7 +127,6 @@ class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {
                 }
                 val triggerTime = SystemClock.elapsedRealtime() + selectedInterval
 
-                // TODO: Step 1.5 get an instance of NotificationManager and call sendNotification
 
                 // TODO: Step 1.15 call cancel notification
 

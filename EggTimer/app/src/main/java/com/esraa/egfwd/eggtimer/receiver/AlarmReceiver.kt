@@ -16,20 +16,25 @@
 
 package com.esraa.egfwd.eggtimer.receiver
 
+import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.esraa.egfwd.eggtimer.R
+import com.esraa.egfwd.eggtimer.util.sendNotification
 
 
 class AlarmReceiver: BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        // TODO: Step 1.10 [Optional] remove toast
-        Toast.makeText(context, context.getText(R.string.eggs_ready), Toast.LENGTH_SHORT).show()
+        //get an instance of NotificationManager and call sendNotification
+        val notificationManager = ContextCompat.getSystemService(
+            context,
+            NotificationManager::class.java
+        ) as NotificationManager
+        notificationManager.sendNotification(context.getString(R.string.timer_running), context)
 
-        // TODO: Step 1.9 add call to sendNotification
 
     }
 
